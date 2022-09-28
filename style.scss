@@ -29,13 +29,16 @@ body {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		align-items: center;
 	}
 
 	&__icon-box{
+		align-self: flex-start;
 		margin: 3em 2em;
 	}
 
 	&__main-image {
+		width: 100%;
 		max-width: 576px;
 		max-height: 280px;
 	}
@@ -88,7 +91,6 @@ body {
 	
 	&__input-btn {
 		position: absolute;
-		top: -1px;
 		right: 0;
 		padding: 2.5px 20px;
 		border-radius: 25px;
