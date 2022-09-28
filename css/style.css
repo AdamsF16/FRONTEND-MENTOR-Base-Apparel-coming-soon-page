@@ -1,5 +1,101 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Josefin Sans", sans-serif;
+  min-height: 100vh;
+  background-image: url("../images/bg-pattern-desktop.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header__icon-box {
+  margin: 3em 2em;
+}
+.header__main-image {
+  max-width: 576px;
+  max-height: 280px;
+}
+.header__text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3em 2em;
+}
+.header__text-title {
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: hsl(0deg, 36%, 70%);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.header__text-title--darker {
+  color: hsl(0deg, 6%, 24%);
+  font-weight: 600;
+}
+.header__text {
+  font-size: 1.6rem;
+  margin: 1em 0;
+  text-align: center;
+  color: hsl(0deg, 36%, 70%);
+}
+.header__input {
+  height: 30px;
+  width: 200px;
+  border-radius: 15px;
+  text-indent: 10px;
+  border: 1px solid hsl(0deg, 36%, 70%);
+}
+.header__input:focus {
+  outline: none;
+  border: 2px solid hsl(0deg, 46%, 50%);
+}
+.header__input-btn {
+  margin-left: -30px;
+  padding: 5px 20px;
+  border-radius: 25px;
+  border: 1px solid transparent;
+  background: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .attribution {

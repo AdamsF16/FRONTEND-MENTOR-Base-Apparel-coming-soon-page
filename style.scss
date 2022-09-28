@@ -1,9 +1,103 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
+.wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+}
 
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
 
 body {
 	font-family: 'Josefin Sans', sans-serif;
+	min-height: 100vh;
+	background-image: url("../images/bg-pattern-desktop.svg");
+	background-size: cover;
+	background-position: center;
 }
+
+.header {
+	&__box{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__icon-box{
+		margin: 3em 2em;
+	}
+
+	&__main-image {
+		max-width: 576px;
+		max-height: 280px;
+	}
+
+	&__text-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 3em 2em;
+	}
+
+	&__text-title {
+		font-size: 3.5rem;
+		font-weight: 300;
+		color: hsl(0, 36%, 70%);
+		text-transform: uppercase;
+		letter-spacing: 3px;
+	}
+
+	&__text-title--darker{
+		color: hsl(0, 6%, 24%);
+		font-weight: 600;
+	}
+
+	&__text {
+		font-size: 1.6rem;
+		margin: 1em 0;
+		text-align: center;
+		color: hsl(0, 36%, 70%);
+	}
+
+	&__input {
+		height: 30px;
+		width: 200px;
+		border-radius: 15px;
+		text-indent: 10px;
+		border: 1px solid hsl(0, 36%, 70%);
+		&:focus{
+			outline: none;
+			border: 2px solid hsl(0, 46%, 50%);
+		}
+	}
+	
+	&__input-btn {
+		margin-left: -30px;
+		padding: 5px 20px;
+		border-radius: 25px;
+		border: 1px solid transparent;
+		background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+		overflow: hidden;
+		cursor: pointer;
+		
+	}
+}
+
+
+
+
+
+
+
 
 .attribution {
 	font-size: 11px;
