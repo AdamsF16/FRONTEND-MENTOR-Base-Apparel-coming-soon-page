@@ -77,11 +77,16 @@ body {
   text-align: center;
   color: hsl(0deg, 36%, 70%);
 }
+.header__input-box {
+  position: relative;
+}
 .header__input {
   height: 30px;
-  width: 200px;
+  min-width: 300px;
   border-radius: 15px;
   text-indent: 10px;
+  font-size: 12px;
+  color: hsl(0deg, 6%, 24%);
   border: 1px solid hsl(0deg, 36%, 70%);
 }
 .header__input:focus {
@@ -89,13 +94,20 @@ body {
   border: 2px solid hsl(0deg, 46%, 50%);
 }
 .header__input-btn {
-  margin-left: -30px;
-  padding: 5px 20px;
+  position: absolute;
+  top: -1px;
+  right: 0;
+  padding: 2.5px 20px;
   border-radius: 25px;
   border: 1px solid transparent;
   background: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
   overflow: hidden;
   cursor: pointer;
+}
+.header__input-btn:hover {
+  background: hsl(0deg, 61%, 83%);
+  -webkit-box-shadow: -3px 5px 15px rgba(212, 38, 38, 0.3);
+          box-shadow: -3px 5px 15px rgba(212, 38, 38, 0.3);
 }
 
 .attribution {
