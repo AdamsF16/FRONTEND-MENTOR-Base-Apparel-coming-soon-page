@@ -1,6 +1,7 @@
 const input = document.querySelector(`input`)
 const btn = document.querySelector(`button`)
 const emailInfo = document.querySelector(`.header__input-validation`)
+const image = document.querySelector(`.header__main-image`)
 
 const correctEmail = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g
 
@@ -24,5 +25,17 @@ const enterKeyup = (e) => {
 }
 
 
+
+const changeImage = () => {
+    if(window.innerWidth > 576) {
+        image.setAttribute(`src`, './images/hero-desktop.jpg')
+    } else {
+        image.setAttribute(`src`, './images/hero-mobile.jpg')
+    }
+}
+changeImage()
+
+
 btn.addEventListener(`click`, checkEmail)
 input.addEventListener(`keyup`, enterKeyup)
+window.addEventListener(`resize`, changeImage)
