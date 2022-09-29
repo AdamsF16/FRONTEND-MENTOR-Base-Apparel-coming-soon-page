@@ -147,7 +147,7 @@ body {
   }
   .header__main-image {
     max-height: none;
-    max-width: 100%;
+    max-width: none;
     height: 100%;
     grid-column: 2/3;
     grid-row: 1/3;
