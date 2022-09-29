@@ -27,7 +27,7 @@ const enterKeyup = (e) => {
 
 
 const changeImage = () => {
-    if(window.innerWidth > 576) {
+    if(window.innerWidth >= 576) {
         image.setAttribute(`src`, './images/hero-desktop.jpg')
     } else {
         image.setAttribute(`src`, './images/hero-mobile.jpg')
