@@ -6,11 +6,6 @@
 	box-sizing: border-box;
 }
 
-.wrapper {
-	max-width: 1400px;
-	margin: 0 auto;
-}
-
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
@@ -22,6 +17,11 @@ body {
 	background-image: url("../images/bg-pattern-desktop.svg");
 	background-size: cover;
 	background-position: center;
+}
+
+.wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
 }
 
 .header {
@@ -115,6 +115,7 @@ body {
 .color-succes {
 	color: green;
 }
+
 .attribution {
 	font-size: 11px;
 	text-align: center;

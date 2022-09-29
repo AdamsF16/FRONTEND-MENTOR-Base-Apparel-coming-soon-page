@@ -7,9 +7,8 @@ const correctEmail = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~
 const checkEmail = () => {
 
     if(input.value.match(correctEmail)){
-        emailInfo.textContent = `Succes`
+        emailInfo.textContent = `Success`
         emailInfo.classList.add(`color-succes`)
-        input.value.textContent = ``
         input.value = ``
     } else {
         emailInfo.textContent = `Please provide a valid email`
